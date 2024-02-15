@@ -1,0 +1,30 @@
+* {
+    margin-top: 2px;
+    margin-left: 1px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    background-color: yellow;
+    font-size: larger;
+    /*font-weight: bold;*/
+}
+
+p.second {
+    color: red;
+}
+
+#third {
+    color:blueviolet;
+}
+
+.vet {
+    font-weight: bold;
+}
+
+p:hover {
+    background-color: white;
+}
