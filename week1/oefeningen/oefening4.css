@@ -1,0 +1,75 @@
+/*
+EISEN AAN DEZE GEWELDIGE SITE
+Het lettertype van de pagina moet een Calibri zijn.
+Mocht er geen Calibri aanwezig zijn, dan moet worden teruggevallen op een Verdana.
+Als die er ook niet is, moet worden teruggevallen op de standaard schreefloze letter van de client.
+
+
+De kleur van de header van het tweede niveau moet blauw zijn.
+
+De breedte van het plaatje van de kat moet veertig procent van de breedte van het scherm zijn;
+de hoogte moet automatisch meegeschaald worden.
+
+Het plaatje moet gecentreerd worden.
+
+De tweede div moet een achtergrondkleur hebben van 'lightgrey'. 
+Er moet een redelijke ruimte zijn tussen de randen van deze div en de eigenlijke inhoud.
+
+Een paragraaf binnen deze tweede div moet #eee als achtergrondkleur hebben.
+
+Extra uitdaging:
+
+Wanneer de bezoeker met zijn muis over een paragraaf in deze tweede div heengaan,
+moet deze een achtergrondkleur krijgen van #aa0. 
+Zorg er dan ook voor dat deze paragrafen een handje als muis-cursor krijgen.
+
+*/
+
+body {
+    font-family: Calibri, Verdana, sans-serif;
+}
+
+h2 {
+    color: blue;
+}
+
+.grayed {
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+.grayed p {
+    background-color: #eee;
+    padding: 10px;
+}
+
+.grayed p:hover {
+    background-color: #aa0;
+    cursor: pointer;
+}
+
+.centered {
+    text-align: center;
+}
+.centered img {
+    width: 40%;
+}
+
+.centereddiv {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+.centereddiv img {
+    width: 100%;
+}
+
+.flexdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flexdiv img {
+    width: 40%;
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Aanmeldformulier</title>
+</head>
+<body>
+    <h1>Muziekschool Sessions Aanmeldformulier</h1>
+    <form action="oefening2.html" method="GET">
+        <p>Voer uw gegevens alstublieft in, dan nemen we zo spoedig mogelijk contact met u op!</p>
+        <p>LET OP: voornaam, achternaam, e-mail, password en betaalwijze zijn verplicht.</p>
+
+        <label for="voornaam">Voornaam:</label>
+        <input type="text" id="voornaam" name="voornaam" placeholder="voornaam" />
+
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" id="achternaam" name="achternaam" placeholder="achternaam" />
+
+        <br><br>
+
+        <label for="email">E-mailadres:</label>
+        <input type="email" id="email" name="email" placeholder="name@email.nl" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="secret" />
+
+        <br>
+
+        <p>Bent u ouder dan 18 jaar?</p>
+        <label for="ja">Ja</label>
+        <input type="radio" id="ja" name="age" value="ja">
+        <label for="nee">Nee</label>
+        <input type="radio" id="nee" name="age" value="nee">
+
+        <br>
+
+        <p>Voor welk instrument wilt u lessen volgen (meerdere keuzes mogelijk)?</p>
+        <input type="checkbox" name="instrument[]" value="drums">Drums
+        <input type="checkbox" name="instrument[]" value="piano">Piano
+        <input type="checkbox" name="instrument[]" value="guitar">Gitaar
+        <input type="checkbox" name="instrument[]" value="harp">Harp
+
+        <p>Welke betalingswijze kiest u?</p>
+        <select name="betaling">
+            <option value="ideal">iDeal</option>
+            <option value="paypal">PayPal</option>
+            <option value="creditcard">Creditcard</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Verstuur formulier">
+    </form>
+</body>
+</html>

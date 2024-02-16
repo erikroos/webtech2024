@@ -1,0 +1,23 @@
+p {
+    width: 500px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.headrow {
+    color: white;
+    background-color: grey;
+}
+
+.rowcontainer p:nth-child(even) {
+    background-color: yellowgreen;
+}
+
+.rowcontainer p:nth-child(odd) {
+    background-color: green;
+}
