@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oefening 5</title>
+    <!-- Bootstrap CSS, JS, and jQuery -->
+
+    <!-- Opdracht #1: VOEG HIER DE BOOTSTRAP4-LINKS TOE -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+      <!--OPDRACHT #2: VOEG OP DEZE PLAATS EEN "DARK" NAVBAR TOE MET EEN LINK NAAR DE SIGNUP PAGINA -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Benvenuto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto"> <!-- mr-auto voor links uitlijnen; zie https://getbootstrap.com/docs/4.0/utilities/flex/#auto-margins -->
+            <li class="nav-item active">
+              <a class="nav-link" href="oefening5_login.html">Inloggen</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+
+        <!-- OPDRACHT #3: CREËER HIER EEN JUMBOTRON MET EEN HEADER EN WAT PASSENDE TEKST OVER DE CINGQUE TERRE. EEN ANDER ONDERWERP IS OOK PRIMA-->
+        <div class="jumbotron">
+            <h1 class="display-4">Cinque Terre</h1>
+            <p>De Cinque Terre in het gelijknamige Nationaal park Cinque Terre bestaat uit vijf dorpjes langs de Italiaanse kust vlak bij La Spezia in Ligurië in Italië:</p>
+            <ul>
+                <li>Monterosso al Mare</li>
+                <li>Vernazza</li>
+                <li>Corniglia</li>
+                <li>Manarola</li>
+                <li>Riomaggiore</li>
+            </ul>
+            <p>De dorpen van Nationaal park Cinque Terre zijn in 1997 opgenomen in de UNESCO-werelderfgoedlijst. Het gebied is moeilijk bereikbaar met de auto langs de steile kust. Er loopt een wandelpad dat de vijf dorpjes met elkaar verbindt, waarvan het deel tussen Riomaggiore en Manarola bekendstaat als de Via dell'Amore. Ook worden de dorpen met elkaar verbonden door een spoorlijn die onderdeel is van de hoofdlijn La Spezia-Genua. Vanaf het wandelpad heeft men uitzicht op zee en de met terrassenteelt bewerkte heuvels. Ook zijn er door muurtjes begrensde olijf- en citroenboomgaarden op de heuvelwanden te vinden.</p>
+            <p>Het grootste dorp is Monterosso al Mare met 1560 inwoners, gelegen aan een zandstrand. Vernazza met 1060 inwoners wordt beschouwd als het meest pittoreske van de vijf. Het dorp telt een aantal rotsstranden en heeft een kleine vissershaven ter bevoorrading van de lokale restaurants en het eigen achterland. Manarola is het oudste van de vijf dorpen. Het werd gesticht in de twaalfde eeuw en heeft aan de achterzijde van de haven het gebied Punto Bonfiglio met een historische begraafplaats en aanliggend park. Van daaruit kan langs een wandelpad naar de andere stadjes gelopen worden, Corniglia en Vernazza. In Corniglia bevinden zich wijnvelden en zeer oude olijfboomgaarden.</p>
+        </div>
+
+        <!-- OPDRACHT #4: ZOEK IN DE DOCUMENTATIE NAAR CAROUSEL!
+                        OP BB STAAN 5 PLAATJES VAN DE DORPEN UIT DE CINQUE TERRE.
+                        MAAK ER EEN DOORLOPENDE VOORSTELLING VAN!
+                        VERDER ZIJN NODIG SYMBOLEN OM VOORUIT EN ACHTERUIT TE BLADEREN,
+                        EEN INDICATIE WELK PLAATJE NU TE ZIEN IS EN
+                        EEN KORTE OMSCHRIJVING-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/riomaggiore.jpg" class="d-block w-100" alt="Rio Maggiore">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Rio Maggiore</h5>
+                  <p>Dit is een mooi dorpje.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/manarola.jpg" class="d-block w-100" alt="Manarola">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Manarola</h5>
+                  <p>Dit ook.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/corniglia.jpg" class="d-block w-100" alt="Corniglia">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Corniglia</h5>
+                  <p>Nog zo'n mooi dorpje.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/vernazza.jpg" class="d-block w-100" alt="Vernazza">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Vernazza</h5>
+                  <p>Dit mag er ook zijn.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/monterosso.jpg" class="d-block w-100" alt="Monterosso">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Monterosso al Mare</h5>
+                  <p>Nu ben ik er wel klaar mee.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Vorige</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Volgende</span>
+            </a>
+          </div>
+
+    </div>
+
+</body>
+</html>   
