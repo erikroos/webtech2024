@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block titel %}
+    Jinja-voorbeeld 1
+{% endblock %}
+
+{% block content %}
+    <h2>Deze pagina is gemaakt met Jinja</h2>
+    <p>Het cijfer is {{cijfer}}</p>
+    <p>Je naam is <strong>{{naam}}</strong></p>
+    <p>De lijst:</p>
+    <ul>
+        {% for item in lijst %}
+            {% if item == 2 %}
+                <li><strong>{{item}}</strong></li>
+            {% else %}
+                <li>{{item}}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+    {% for key,value in dict.items() %}
+        <p>{{key}} = {{value}}</p>
+    {% endfor %}
+{% endblock %}

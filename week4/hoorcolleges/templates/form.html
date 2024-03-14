@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block titel %}
+    Formulier
+{% endblock %}
+
+{% block content %}
+    <h2>Vul svp dit formulier in:</h2>
+    <form method="post" action="/form">
+        <label for="naam">Naam:</label>
+        <input type="text" name="naam" placeholder="Je naam">
+        <input type="submit" value="Verstuur">
+    </form>
+{% endblock %}
