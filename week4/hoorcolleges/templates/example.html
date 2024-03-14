@@ -22,4 +22,14 @@
     {% for key,value in dict.items() %}
         <p>{{key}} = {{value}}</p>
     {% endfor %}
+
+    <!-- Twee manieren om een knop met een link te maken -->
+    <!-- 1: a gestyled als button -->
+    <p>
+        <a href="/" class="btn btn-primary">Terug naar Home</a>
+    </p>
+    <!-- 2: button met javascript -->
+    <button onclick="window.location.href='/example2';">
+      Klik hier om naar de tweede voorbeeldpagina te gaan
+    </button>
 {% endblock %}
