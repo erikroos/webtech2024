@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulier Test</title>
+</head>
+<body>
+    <h1>Welkom</h1>
+
+    {% for message in get_flashed_messages() %}
+        <p style="color:red;">{{ message }}</p>
+    {% endfor %}
+
+    <h2>Aanmeldingen</h2>
+    <ul>
+    {% for row in rows %}
+        <li>{{row.voornaam}} {{row.achternaam}}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Meld je aan!</h2>
+    <form method="POST" action="/">
+        {{ form.hidden_tag() }}
+        {{ form.voornaam.label }} {{ form.voornaam() }}
+        <br>
+        {{ form.achternaam.label }} {{ form.achternaam() }}
+        <br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>

@@ -35,7 +35,7 @@ def index():
     cursor.close()
     db.close()
 
-    return render_template("demo2.html", form=form, rows=rows)
+    return render_template("demo.html", form=form, rows=rows)
 
 if __name__ == "__main__":
     app.run(debug=True)
