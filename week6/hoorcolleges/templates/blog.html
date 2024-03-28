@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Blogs{% endblock %}
+
+{% block contents %}
+    <h1>Welkom</h1>
+
+    <p><a href="/">Terug naar home</a></p>
+
+    <h2>Bestaande blogposts</h2>
+    <ul>
+    {% for post in posts %}
+        <li>"{{post.titel}}" door {{post.auteur.voornaam}} {{post.auteur.achternaam}}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Alle auteurs</h2>
+    <ul>
+    {% for auteur in auteurs %}
+        <li>
+            {{auteur.voornaam}} {{auteur.achternaam}}
+            <ul>
+            {% for post in auteur.posts %}
+                <li>{{post.titel}}</li>
+            {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <h2>Voeg een blogpost toe</h2>
+    <form method="POST" action="/newblog">
+        {{ form.hidden_tag() }}
+        {{ form.titel.label }} {{ form.titel() }}
+        <br>
+        {{ form.auteur.label }} {{ form.auteur() }}
+        <br>
+        {{ form.submit() }}
+    </form>
+{% endblock %}

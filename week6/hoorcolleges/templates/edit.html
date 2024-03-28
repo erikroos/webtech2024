@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Gegevens aanpassen{% endblock %}
+
+{% block contents %}
+    <h1>Welkom</h1>
+    <h2>Pas je gegevens aan</h2>
+    <form method="POST" action="/edit">
+        {{ form.hidden_tag() }}
+        {{ form.voornaam.label }} {{ form.voornaam() }}
+        <br>
+        {{ form.achternaam.label }} {{ form.achternaam() }}
+        <br>
+        {{ form.submit() }}
+    </form>
+{% endblock %}
